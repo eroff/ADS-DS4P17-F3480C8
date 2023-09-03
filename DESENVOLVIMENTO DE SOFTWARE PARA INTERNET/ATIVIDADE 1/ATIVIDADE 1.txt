@@ -1,0 +1,50 @@
+1	HTML5 E SEUS CONCEITOS
+O HTML5 (HyperText Markup Language) não é uma linguagem para programação em si, mas sim para marcação, estruturação e construção de páginas da web. Engloba não apenas HTML, mas também a XHTML1 e o HTML DOM Nível 2. É utilizado em conjunto de outras linguagens para adicionar design, complexidade e utilidades à página criada. O HTML5 é a versão mais recente desta linguagem, tendo suporte a tags, elementos e conteúdo de multimídia. Alguns conceitos-chave sobre o uso de HTML são os seguintes:
+1 - Estrutura básica: Um documento HTML começa com um elemento <html>, o qual contém outros dois elementos principais, sendo: <head> e <body>. A seção <head> geralmente contém metadados, como título da página, links para folhas de estilo e scripts. A seção <body> contém o conteúdo visível da página, como texto, imagens e outros elementos.
+2 - Tags e elementos: O HTML consiste em tags (ou marcas) que são usadas para envolver elementos de conteúdo e dar significado a eles. As tags são definidas entre colchetes angulares, como <tag>. Alguns exemplos de tags incluem <p> para parágrafos, <img> para imagens, <a> para links e assim por diante.
+3 - Atributos: As tags podem conter atributos que fornecem informações adicionais sobre o elemento. Os atributos são definidos dentro da tag e geralmente possuem um nome e um valor. Por exemplo, o atributo src em uma tag <img> especifica a localização da imagem a ser exibida.
+4 - Hierarquia e aninhamento: Os elementos HTML podem ser aninhados uns dentro dos outros para criar uma estrutura hierárquica. Isso ajuda a definir a relação entre diferentes partes do conteúdo. No entanto, é importante garantir que as tags sejam fechadas na ordem correta para evitar erros.
+5 - Links e navegação: O elemento <a> é usado para criar links em uma página da web. O atributo href dentro da tag <a> especifica o destino do link, que pode ser outra página, um recurso externo ou um ponto dentro da própria página.
+6 - Formulários: Os formulários HTML permitem aos usuários inserir informações e interagir com uma página da web. Elementos como <input>, <textarea>, <select> e <button> são usados para criar diferentes tipos de campos de entrada e botões.
+7 - Semântica: HTML5 introduziu muitos elementos semânticos que fornecem significado estrutural e funcional para o conteúdo. Isso não apenas ajuda os desenvolvedores a criar páginas mais acessíveis, mas também ajuda os mecanismos de busca a entender melhor o conteúdo da página.
+8 - Estilos e CSS: Embora o HTML seja usado para definir a estrutura e o conteúdo da página, a aparência visual é controlada principalmente por meio de folhas de estilo em cascata (CSS). As folhas de estilo são vinculadas ao HTML para controlar cores, fontes, layout e outros aspectos visuais.
+9 - Integração multimídia: HTML suporta a incorporação de vários tipos de mídia, como imagens, áudio e vídeo, usando elementos como <img>, <audio> e <video>.
+10 - Compatibilidade com dispositivos: O HTML é projetado para ser exibido em uma grande variedade de dispositivos, como computadores, smartphones e tablets. A abordagem responsiva de design garante que as páginas se ajustem automaticamente ao tamanho da tela.
+Reforçando mais uma vez que HTML é apenas uma parte do desenvolvimento web. Sendo assim, utilizam-se outras ferramentas em conjunto para melhores resultados, sendo estas CSS (basicamente a parte visual e interativa), e o JavaScript para adicionar funcionalidades.
+1.1	Código HTML5
+De acordo com Adriana Rodrigues (2014, p. 60) em sua publicação “[...] as funções melhoradas da HTML5, visando fornecer aos usuários a experiência de um aplicativo nativo em um tempo significativamente menor e a um bom custo [...]”, cita o uso de uma biblioteca para verificação e validação de suporte do HTML5, com o uso de uma biblioteca chamada Modernizr. O primeiro trecho desta biblioteca verifica a possibilidade de operação offline, após o primeiro carregamento de todos os arquivos necessários para funcionamento online. Segue o código em questão:
+
+1 if (Modernizr.applicationcache) {
+2 // window.applicationCache is available!
+3 } else {
+4 // no native support for off-line :(
+5 // try a fallback or another third-party solution
+6 }
+1.2	A Guerra dos Browsers
+A conhecida Guerra dos Browsers foi basicamente o período em que o Netscape, que até então estava dominando o mercado por ser o “software absoluto” na categoria, perde sua liderança para o Internet Explorer, lançado pela empresa Microsoft. A empresa estaria embutindo em seu sistema operacional o novo navegador, fazendo com que o Netscape perdesse sua popularidade.
+No que tange este assunto, temos a publicação feita por Marcelo Peixoto Bax, no site SciELO:
+“No início dos anos 90, nos seus primeiros anos de vida de 1992 a 1995, quando a Web literalmente "explodiu" no mundo todo, muitas organizações e empresas começaram a perceber que estavam bastante limitadas pela falta de flexibilidade de HTML no tocante às suas possibilidades em promover a troca mais efetiva de informações pela Web. HTML foi então estendida posteriormente a cada nova versão, de forma um tanto desorganizada, impulsionada pela conhecida guerra dos navegadores (ou browsers). E o que foi pior: estas extensões integraram principalmente elementos puramente de apresentação (formatação, estilo), que controlam a aparência das informações nos navegadores. Como visto anteriormente, isso vai de encontro ao paradigma das linguagens de marcação descritiva, no sentido em que estas procuram separar a estrutura e a semântica da informação de sua apresentação física (estilo). A introdução da formatação de estilo em HTML começou a tornar os documentos de difícil leitura para o homem.”
+
+	Ainda nesta publicação, ele cita a necessária intervenção do W3C (World Wide Web Consortium) nesta guerra, para que não afetasse o usuário final:
+“Tentando fazer o papel de árbitro nesta guerra, o World-Wide Consortium (W3C) definiu versões mínimas que deveriam ser interpretadas por todos os navegadores. O W3C é a organização que se encarrega do desenvolvimento e manutenção dos padrões da Web. Em uma de suas últimas publicação sobre HTML (a versão 4.0), o W3C incentiva a separação entre a estrutura e o visual dos documentos HTML, aspecto fundamental do paradigma, e desenvolveu as chamadas "folhas de estilo" ou CSS (Cascading Style Sheet), que definem como os elementos devem ser mostrados nos navegadores.”
+
+Motores de renderização é responsável pela exibição do conteúdo em uma página web. Os “web browsers” (navegadores da web) utilizam diferentes motores de renderização para processamento e exibição dos conteúdos em páginas. Cada motor possui características única, o que leva a diferenças perceptíveis no desempenho para o usuário, tanto na compatibilidade com padrões da web, quanto na experiência geral do usuário. Alguns exemplos de motores de renderização conhecidos são o Blink, o Gecko e o WebKit.
+1.3	Blink
+Desenvolvido pelo Google, é basicamente uma ramificação do WebKit
+(utilizado pelo Safari). É conhecido pelo seu rápido processamento e desempenho, e é considerado um dos mais eficientes e suaves. Altamente otimizado para o Google e seu ambiente como Gmail, Google Drive, Google Docs etc.
+	Apesar do desenvolvimento ser principalmente efetuado pela equipe Google, o Blink possui muitas contribuições de sua comunidade, por ser open source. O que nos leva à compatibilidade com extensões, que permitem a personalização da experiência com o navegador à gosto do usuário. Além destas características, o Blink também conta com um sistema de segurança próprio, contra malwares e phishing, e bloqueio de rastreadores. 
+1.4	Gecko
+O Gecko é um motor de renderização desenvolvido pela Mozilla Foundation (antiga Netscape). Utilizado principalmente pelo Mozilla Firefox, este motor trás algumas características únicas como sua aderência rigorosa aos padrões estabelecidos pelo W3C, ou a personalização de aparência e comportamento do navegador, pois trata-se de um sistema open source. Igualmente ao Blink, possui um sistema de segurança embutido, que protege o usuário com constantes atualizações contra rastreamentos, e conteúdo malicioso.
+1.5	WebKit
+Sendo um motor de renderização em código aberto desenvolvido pela Apple. Sendo parte de um projeto interno, e posteriormente adotado pelo navegador Safari, o motor tem por tendência seguir as prioridades e filosofias da empresa Apple, devido a influência significante da empresa sobre ele. O WebKit é otimizado para o funcionamento em plataformas Apple como o macOS, iOS, watchOS etc.
+Igualmente ao Gecko, este motor segue rigorosamente os padrões da W3C, para garantir uma experiência mais consistente ao usuário. Além disto, frequentemente implementa novas especificações da web e APIs, algumas das quais podem eventualmente se tornar parte dos padrões oficiais. 
+REFERÊNCIAS
+BAX, M. P. Introdução às linguagens de marcas. UFMG. Disponível em: <https://www.scielo.br/j/ci/a/7P5XyK64nwWfQR4JcTc5Ntx/#>. Acesso em: 15 de agosto de 2023.
+
+FONSECA, C. E. R. B. Picture-in-Picture na Web: um caso de uso para o desenvolvimento de funcionalidades no motor Web Kit. UFRN. Disponível em: <https://repositorio.ufrn.br/bitstream/123456789/43612/1/PictureInPictureNaWeb_Fonseca_2019.pdf>. Acesso em: 15 de agosto de 2023.
+
+SARAIVA, Adriana Rodrigues. Et al. Device Fingerprinting: Conceitos e Técnicas, Exemplos e Contramedidas. Disponível em: <https://repositorio.ufrn.br/handle/123456789/43612>. Acesso em: 15 de agosto de 2023.
+
+Autor desconhecido. Blink (Rendering Engine). The Chromium Projects. Disponível em: <https://www.chromium.org/blink/>. Acesso em: 15 de agosto de 2023.
+
+Autor desconhecido. Gecko. MDN Web Docs. Disponível em: <https://developer.mozilla.org/pt-BR/docs/Glossary/Gecko>. Acesso em: 15 de agosto de 2023.

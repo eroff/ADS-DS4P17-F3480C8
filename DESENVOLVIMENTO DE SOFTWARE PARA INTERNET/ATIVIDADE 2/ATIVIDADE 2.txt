@@ -1,0 +1,36 @@
+O que sao as <Tags> em HTML5.
+
+    As "<tags>" em HTML5 sao elementos utilizados para atribuir caracteristicas ao conteudo da pagina em questao. Sua presenca denota-se pelo
+uso de angulos (< e >), e possuem alguma instrucao entre os mesmos, para atribuir alguma caracteristicas ao texto designado. Grande parte das
+tags possuem um fechamento, que pode ser identificado pelo uso de angulos tambem, com a mesma instrucao, porem com uma barra antecedendo a
+instrucao. Pode-se citar como exemplo o trecho a seguir:
+
+<u>A instrucao U da-se como a abreviacao de Underline. Portanto este texto esta sublinhado</u>.
+
+    Neste caso, a tag foi aberta com a instrucao de sublinhar (underline) o conteudo, e encerrada logo em seguida.
+    Temos tres principais tags que sao utilizadas em HTML5, sendo essas as tags HEAD, BODY e FOOTER. De acordo com o livro "HTML5 e CSS3 com
+farinha e pimenta", escrito por Diego Eis e Elcio Ferreira (2012, p. 21), "[...]a Tag HEAD e onde fica toda a parte inteligente da pagina. No
+HEAD ficam os metadados. Metadados sao informacoes sobre a pagina e o conteudo ali publicado."
+    Abordando agora um pouco mais sobre a questao das instrucoes, elas podem ser divididas em duas categorias, sendo essas: ELEMENTOS INLINE e 
+ELEMENTOS DE BLOCO. A principal caracteristica de um ELEMENTO DE BLOCO pode ser observada atraves de sua estruturacao, pois este elemento serve
+para alterar o bloco de conteudo em um todo, como paragrafo, centralizacao, etc. Ja os ELEMENTOS INLINE sao observados por alterarem o conteudo
+na propria linha, sem quebra-la ou ocupar mais espaco do que o necessario.
+    Tambem e possivel adicionar atributos que fornecam informacoes adicionais sobre o elemento. Um exemplo disso, pode ser observado no seguinte
+codigo:
+
+<a href="https://www.exemplo.com">Exemplo</a>
+
+    Neste exemplo, o elemento "Exemplo" recebeu como atributo um hiperlink, o qual redireciona o usuario para um site externo de escolha. Com o
+uso de tags, e possivel fazer listagem atraves da tag <li>, sublinhar com <u>, formatar para italico com <i>, entre outras existentes. Tambem
+e possivel anexar midia, tabelas, formularios e etc. O HTML5 introduziu uma vasta gama de novos elementos e atributos, criando muito mais
+possibilidades para a personalizacao dos elementos.
+
+
+
+Referencias
+EIS, Diego; FERREIRA, Elcio. HTML5 e CSS3 com sal e pimenta. Edicao unica. Sao Paulo: Tableless, 2012.
+
+Bibliografia
+SARRIS, Simon. HTML5 Unleashed. Indianapolis: Sams Publishing, 2014.
+MACEDO, Rafael Luiz de. Interpretador AIML alimentado com tags HTML5. Marilia: UNIVEM, 2014.
+SILVA, Mauricio Samy. HTML5 - A linguagem de marcacao que revolucionou a Web. Sao Paulo: Novatec, 2010.
